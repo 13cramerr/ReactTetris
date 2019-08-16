@@ -6,4 +6,5 @@ const Cell = ({ type }) => (
     <StyledCell type={type} color={TETROMINOS[type].color } />
 );
 
-export default Cell;
+// only rerenders updated cells
+export default React.memo(Cell);
